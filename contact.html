@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Contact Us</title>
+<link href="css/main.css" rel="stylesheet" type="text/css" media="screen">
+</head>
+<body>
+	<section id="topBar"></section><!--end topBar-->
+	<div id="siteContainer">
+		<h1 class="hidden">Contact</h1>
+		<header id="mainHeader">
+			<div id="logoHeader">
+				<img src="images/nguyen_hien_hillier_matt_logo.svg" alt="ThriftX" width="270" height="124" id="logoHeader">
+			</div>
+
+		<div class="searchNav">
+
+		<div id="searchBar">
+		<form id="searchForm" action="form.php" method="post">
+			<input type="text" required id="search" search="searchSth" size="30" placeholder="Search">
+			<input id="submit" type="submit" value="SEARCH">
+		</form>
+		</div>
+		
+		<nav class="mainNav">
+			<h2 class="hidden">Header Navigation</h2>
+				<ul>
+					<li id="selected"><a href="index.html">HOME</a></li>
+					<li><a href="about.html">ABOUT</a></li>
+					<li><a href="product1.html">MEN'S WEAR</a></li>
+					<li><a href="product2.html">WOMEN'S WEAR</a></li>
+					<li><a href="contact.html">CONTACT</a></li>
+				</ul>
+		</nav>
+		</div> <!--end searchNav div-->
+		</header>
+
+		<h2 class="contactUs">Contact Us</h2>
+		<section class="mainContact"> <!--contain the whole page-->
+			<section id="information">
+				<p><span id="contactInfo">Follow</span> us on social medias!</p>
+				<div class="socialMedia">
+					<ul id="icon">
+						<li><a href="http://www.facebook.com"><img src="images/facebook.svg" alt="facebook"></a></li>
+						<li><a href="http://www.twitter.com"><img src="images/twitter.svg" alt="twitter"></a></li>
+					</ul>
+				</div>
+				<p><span id="contactInfo">Phone</span>: 777-888-9999</p>
+				<p><span id="contactInfo">Email</span>: ask@thriftx2018.com</p>
+				<p id="contactInfo">Address</p>
+				<p class="street">12 Random Street, <span class = "city"><b>London, ON N3V 2B9</b></span></p>
+				<p class="street">24 Random street, <span class = "city"><b>London, ON B3V 1A9</b></span></p>
+			</section>
+
+			<section id="contactArea">
+				<form id="contactForm" action="form.php" method="post">
+					<label for="name">Name</label>
+                    <input type="text" required id="name" name="fullName" size="30" placeholder="Enter your name">
+                    <label for="email">Email</label>
+                    <input type="email" required id="email" size="30" placeholder="Enter your Email">
+                    <label for="subject">Subject</label>
+                    <input type="text" required id="subject" name="Subject" size="30">
+                    <label for="message">Message</label>
+                    <textarea name="message" id="message" required cols="50" rows="8"></textarea>
+                    <input id="submit" type="submit" value="Submit"> 
+				</form>
+			</section> <!--End contactArea-->
+		</section> <!--End mainContact-->
+
+		<footer id="mainFooter">
+			<div class="LogoNav">
+				<div class="logoFooter">
+					<img src="images/nguyen_hien_hillier_matt_logo.svg" alt="ThriftX" width="130" height="43" id="logoFooter">
+				</div>
+
+				<nav class="footerNav">
+					<h2 class="hidden">Footer navigation</h2>
+					<ul>
+						<li><a href="index.html">HOME</a></li>
+						<li><a href="product1.html">MEN'S WEAR</a></li>
+						<li><a href="product2.html">WOMEN'S WEAR</a></li>
+						<li><a href="about.html">ABOUT</a></li>
+						<li><a href="contact.html">CONTACT</a></li>
+					</ul>
+				</nav>
+			</div> <!--End LogoNav-->
+
+			<div class="infoCopy">
+				<section id="hours">
+					<h3>HOURS OF OPERATIONS</h3>
+						<p>Monday - Saturday: 9:30 AM - 10:00 PM</p>
+						<p>Sunday: 10:00 AM - 9:00 PM</p>
+				</section>
+				<section id="copyRight">
+						<p>Copyright © 2018 by ThriftX</p>
+				</section>
+			</div> <!--End infoCopy-->
+
+		</footer> 
+	</div>
+
+	</div> <!--End container-->
+
+<script src="js/main.js"></script>
+
+</body>
+</html>

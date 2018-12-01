@@ -1,0 +1,536 @@
+@charset "UTF-8";
+
+div,p,body,header,footer,section,nav,img,h2,h3
+{ 
+	margin: 0; 
+	padding: 0; 
+}	
+
+/*html selectors*/
+body 
+{
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 12px;
+	color: #333;
+}
+
+a:link, a:visited 
+{ 
+ 	text-decoration:none; 	
+}
+
+a:hover, a:active 
+{ 
+	text-decoration:none; 
+}
+
+.hidden
+{
+	display: none;
+}
+
+#topBar
+{
+	background-color: #000;
+	height: 20px;
+}
+
+#siteContainer 
+{
+	margin: 0 auto;
+	width: 920px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+/*This is a flex container*/
+#mainHeader
+{
+	margin-top: 40px;
+	height: 140px;
+	display: flex;
+	flex-direction: row;
+  	justify-content: flex-start;
+	border-bottom: solid 1px #DDD;
+	background-color: #505050;
+}
+
+#logoHeader
+{
+	margin-top: 5px;
+  	margin-left: 20px;
+ 	margin-bottom: 20px;
+}
+
+/*contain search bar + nav*/
+.searchNav
+{
+	margin-left: auto;
+	display: flex;
+	flex-direction: column;
+  	justify-content: flex-start;
+  	background-color: #505050;
+  	width: 600px;
+}
+
+/*search*/
+
+#searchBar
+{
+	margin-left: auto;
+	padding-right: 20px;
+}
+
+#searchForm
+{
+  margin-top: 5px;
+}
+
+fieldset {
+  border: none;
+}
+
+input, textarea  {
+  font-size: 14px;
+  margin-top: 10px;
+  margin-bottom: 8px;
+  padding: 5px;
+  width: 200px;
+  height: 16px;
+  background-color: #ffffff;
+  display: block;
+  border: 2px solid #9BD7D5;
+  color: black;
+}
+
+#search
+{
+  width: 250px;
+  height: 14px;
+  margin-top: 10px;
+}
+
+#submit
+{
+  display: block;
+  width: 75px;
+  height: 30px;
+  text-align: center;
+  margin-left:auto;
+  color: #FFF;
+  padding: 4px;
+  background-color: #2073a8;
+  font-size: 14px;
+  border: 1px solid #003471;
+}
+
+/*navigation*/
+.mainNav
+{
+	width: 550px;
+	height: 40px;
+	margin-left: auto;
+	background-color: #505050;
+	margin-top: 14px;
+}
+
+.mainNav ul
+{
+	list-style-type: none;
+	padding: 0;
+}
+
+.mainNav ul li 
+{
+	font-size: 16px;
+	display: inline;
+	cursor: pointer;
+	margin: 5px;
+}
+
+.mainNav ul li a 
+{
+	color: #9BD7D5;
+	padding: 5px;
+}
+
+.mainNav ul li a:hover
+{
+	padding: 5px;
+	background-color: black;
+	color: #FFF5C3;
+}
+
+/*Banner*/
+.largeBanner
+{
+	height:280px;
+	width: 920px;
+	display: flex;
+  	flex-direction: column;
+  	justify-content: space-evenly;
+  	position: relative;
+  	margin-top: 20px;
+  	background: url(../images/home_banner.jpg) no-repeat bottom;
+}
+
+.largeBanner h2
+{
+	color: #fff;
+	font-size: 40px;
+	padding-right: 10px;
+	text-align: right;
+	margin-bottom: -100px;
+	text-shadow: 2px 2px 2px #505050;
+	
+}
+
+.largeBanner h3
+{
+	color: red;
+	font-size: 80px;
+	text-align: right;
+	padding-top: 5px;
+	padding-right: 10px
+	margin-top: 20px;
+	margin-bottom: -30px;
+	margin-right: 10px;
+	text-shadow: 4px 4px 4px #505050;
+}
+
+/*signup*/
+.signUp
+{
+	height: 25px;
+	width: 920px;
+	background-color: black;
+	margin-top: 20px;
+}
+
+.signUp p 
+{
+	color: white;
+	font-size: 15px;
+	text-align: center;
+	padding: 3px;
+}
+
+/*products*/
+.productInfo
+{
+	margin-top: 20px;
+	display: flex;
+	flex-direction: row;
+  	justify-content: space-between;
+	border-bottom: solid 2px #DDD;
+	padding-bottom: 20px;
+}
+
+#productDesc
+{
+	width: 200px;
+	height: 330px;
+}
+
+#productDesc p
+{
+	font-size: 18px;
+	background-color: #CDD4CA;
+	color: #505050;
+	text-align: center;
+	padding: 3px;
+}
+
+/*Main Footer*/
+#mainFooter
+{
+	background-color: #505050;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	height: 140px;
+}
+
+.logoNav
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+}
+
+.logoFooter
+{
+	margin-top: 20px;
+	margin-left: 50px;
+}
+
+.footerNav
+{
+	width: 500px;
+	height: 40px;
+	margin-top: 16px;
+	margin-left: 20px;
+}
+
+.footerNav ul
+{
+	list-style-type: none;
+	padding: 0;
+}
+
+.footerNav ul li 
+{
+	font-size: 14px;
+	display: inline;
+	cursor: pointer;
+}
+
+.footerNav ul li a 
+{
+	color: #9BD7D5;
+	padding: 7px;
+}
+
+.footerNav ul li a:hover
+{
+	padding: 7px;
+	color: #FFF5C3;
+}
+
+/*left side of footer*/
+.infoCopy
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	margin-left: auto;
+	background-color: #505050;
+	width: 400px;
+	color: white;
+	border-left: solid 1px #CCC;
+	border-left-height: 50px;
+}
+
+#hours
+{
+	margin: 0 auto;
+	margin-top: 20px;
+}
+
+#hours h3
+{
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	color: #fff5c3;
+	font-size: 18px;
+}
+
+#hours p
+{
+	font-size: 13px;
+	line-height: 20px;
+}
+
+#copyRight
+{
+	margin-top: 40px;
+	margin-left: 100px;
+}
+
+/*ABOUT PAGE*/
+.aboutBanner
+{
+	width: 920px;
+	height: 250px;
+	background-color: white;
+	margin-top: 40px;
+	margin-bottom: 40px;
+	text-align: center;
+	font-family: "Lucida Console", Monaco, monospace;
+	background: url(../images/aboutBanner.jpg) no-repeat bottom;
+	border: solid 1px black;
+}
+
+
+.aboutBanner h2
+{
+	color: white;
+	font-size: 60px;
+	padding-top: 50px;
+}
+
+
+.aboutBanner p
+{
+	color: blue;
+	font-size: 15px;
+	padding-top: 10px;
+}
+
+#checked, #free
+{
+	color: lightblue;
+}
+
+/*Information*/
+.aboutInfo
+{
+	display: flex;
+  	flex-direction: row;
+  	justify-content: flex-start;
+  	height: 380px;
+  	margin-bottom: 40px;
+}
+
+.aboutBox
+{
+	height: 380px;
+	width: 450px;
+	border-top: solid 2px black;
+	border-bottom: solid 2px black;
+}
+
+.aboutText 
+{
+	background-color: #FFCDB9;
+	width: 410px;
+	height: 300px;
+	margin-bottom: 40px;
+	margin-top: 40px;
+}
+
+.aboutText h2
+{
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color: #230333;
+	font-size: 26px;
+	padding-bottom: 10px;
+	padding-left: 20px;
+	padding-top: 10px;
+}
+
+.aboutText p
+{
+	font-size: 20px;
+	line-height: 28px;
+	font-family: Georgia, serif;
+	color: black;
+	padding-top: 20px;
+	padding-bottom: 30px;
+	padding-left: 20px;
+}
+
+.aboutImage
+{
+	width: 430px;
+	height: 380px;
+	margin-left: 80px;
+	border: 1px solid lightblue;
+}
+
+
+/*CONTACT PAGE*/
+.contactUs
+{
+	font-size: 25px;
+	text-align: center;
+	padding-top: 10px;
+	font-family: Arial;
+	line-height: 30px;
+}
+
+.mainContact
+{
+  	width: 920px;
+  	height: 630px;
+  	display: flex;
+  	flex-direction: row;
+  	justify-content: space-between;
+  	flex-wrap: wrap;
+  	font-family: "Trebuchet MS", Helvetica, sans-serif;
+  	margin-bottom: 40px;
+  	margin-top: 20px;
+}
+
+#information
+{
+	width: 440px;
+	background-color: #FFF5C3;
+	font-size: 22px;
+	border-right: solid 1px #CCC;
+	padding-top: 100px;
+}
+
+#information p 
+{
+	line-height: 40px;
+	padding-left: 20px;
+}
+
+
+#contactInfo
+{
+	color: green;
+}
+
+/*social medias*/
+.socialMedia
+{
+	height: 45px;
+	margin-right: auto;
+	margin-top: 10px;
+	margin-left: 10px;
+}
+
+#icon img
+{
+	width: 45px;
+	height: 45px;
+}
+
+#icon
+{
+	list-style: none;
+	margin:0;
+	padding:0;
+}
+
+#icon li
+{
+	display: inline;
+	margin-left: 10px;
+}
+
+#icon li a:hover
+{
+	filter: grayscale(50%);
+}
+
+.street
+{
+	font-size: 20px;
+}
+
+.city
+{
+	font-size: 20px;
+	color: #2E0C67;
+}
+
+/*Contact Area*/
+#contactArea
+{
+	width: 410px;
+  	padding-left: 40px;
+  	background-color: pink;
+  	padding-top: 30px;
+}
+
+#contactForm
+
+fieldset {
+  	border: none;
+}
+
+
+
+
